@@ -11,9 +11,6 @@ final class ContactListViewController: UITableViewController {
     
     private let persons = Person.getPersons()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     // MARK: - Table view data source
     
