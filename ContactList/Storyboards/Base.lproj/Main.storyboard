@@ -47,8 +47,32 @@
                     <view key="view" contentMode="scaleToFill" id="xuw-m8-ewf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="EWR-c4-rmm">
+                                <rect key="frame" x="16" y="175" width="361" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: 00445567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqe-xf-RI5">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: asr@gamil.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3k-yX-CYW">
+                                        <rect key="frame" x="0.0" y="71" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zpL-An-tXl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EWR-c4-rmm" firstAttribute="leading" secondItem="zpL-An-tXl" secondAttribute="leading" constant="16" id="DFb-Dp-CHV"/>
+                            <constraint firstItem="zpL-An-tXl" firstAttribute="trailing" secondItem="EWR-c4-rmm" secondAttribute="trailing" constant="16" id="QnL-3J-b3G"/>
+                            <constraint firstItem="EWR-c4-rmm" firstAttribute="top" secondItem="zpL-An-tXl" secondAttribute="top" constant="20" id="Vmg-vd-Kth"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Kr-QB-SfS"/>
                 </viewController>
