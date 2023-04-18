@@ -60,12 +60,12 @@
 		C893DE8929EEC1850031CC08 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				C893DEA429EEC2100031CC08 /* DataStore */,
 				C893DEA129EEC1EB0031CC08 /* Models */,
-				C893DE9E29EEC1990031CC08 /* App */,
+				C893DEA429EEC2100031CC08 /* DataStore */,
 				C893DEA029EEC1C40031CC08 /* ViewControllers */,
 				C893DE9F29EEC1AB0031CC08 /* Storyboards */,
 				C893DE9329EEC1860031CC08 /* Assets.xcassets */,
+				C893DE9E29EEC1990031CC08 /* App */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ML94J3D5JQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -365,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ML94J3D5JQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
