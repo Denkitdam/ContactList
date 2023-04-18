@@ -11,7 +11,7 @@
         <!--Persons List-->
         <scene sceneID="vqm-Tw-lKd">
             <objects>
-                <tableViewController id="yO7-Pt-lTS" sceneMemberID="viewController">
+                <tableViewController id="yO7-Pt-lTS" customClass="ContactListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UyJ-0W-Fgl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="539.69465648854964" y="-16.197183098591552"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Details View Controller-->
         <scene sceneID="oxL-ud-wIz">
             <objects>
-                <viewController id="Y0Q-bo-j0f" sceneMemberID="viewController">
+                <viewController id="Y0Q-bo-j0f" customClass="ContactDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuw-m8-ewf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9Y-VE-Xvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="-5"/>
+            <point key="canvasLocation" x="1315" y="-8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SF3-Aa-xqs">
