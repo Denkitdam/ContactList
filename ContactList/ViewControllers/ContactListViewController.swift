@@ -16,11 +16,7 @@ final class ContactListViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
     }
@@ -39,8 +35,12 @@ final class ContactListViewController: UITableViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            return
+        }
+        let person = persons[indexPath.row]
+        let contactDetailsVC = segue.destination as? ContactDetailsViewController
+        contactDetailsVC?.person = person 
     }
    
 
