@@ -13,17 +13,18 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        for _ in 1...names.count {
-            let person = Person(
+        
+        while persons.count < 6 {
+            let newPerson = Person(
                 name: names.randomElement() ?? "",
                 surname: surnames.randomElement() ?? "",
                 phone: phones.randomElement() ?? "",
                 email: emails.randomElement() ?? ""
             )
             
-            persons.append(person)
+            persons.append(newPerson)
+
         }
-        
         return persons
     }
 }
