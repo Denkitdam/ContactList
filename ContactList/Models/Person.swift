@@ -11,20 +11,34 @@ struct Person {
     let phone: String
     let email: String
     
+    var fullName: String {
+        "\(name) \(surname)"
+    }
+    
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        let data = DataStore.init()
+       
+        let names = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
+        let phones = DataStore.shared.surnames.shuffled()
+        let emails = DataStore.shared.surnames.shuffled()
         
-        while persons.count < 6 {
-            let newPerson = Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                phone: data.phones.randomElement() ?? "",
-                email: data.emails.randomElement() ?? ""
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            phones.count,
+            emails.count
+        )
+        
+        for index in 0..<iterationCount {
+            let person = Person(
+                name: names[index],
+                surname: surnames[index],
+                phone: phones[index],
+                email: emails[index]
             )
-            if !persons.contains(where: { $0.name == newPerson.name || $0.surname == newPerson.surname || $0.phone == newPerson.phone && $0.email == newPerson.email }) {
-                persons.append(newPerson)
-            }
+            
+            persons.append(person)
         }
         return persons
     }
