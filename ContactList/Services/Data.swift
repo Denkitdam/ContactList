@@ -6,7 +6,7 @@
 //
 class DataStore {
     
-    static let shared = DataStore
+    static let shared = DataStore()
     
     let names = [
         "Mike",
