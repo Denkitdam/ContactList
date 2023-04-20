@@ -24,8 +24,8 @@ struct Person {
        
         let names = DataStore.shared.names.shuffled()
         let surnames = DataStore.shared.surnames.shuffled()
-        let phones = DataStore.shared.surnames.shuffled()
-        let emails = DataStore.shared.surnames.shuffled()
+        let phones = DataStore.shared.phones.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
         
         let iterationCount = min(
             names.count,
