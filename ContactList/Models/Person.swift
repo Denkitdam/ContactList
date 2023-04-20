@@ -21,9 +21,9 @@ struct Person {
                 phone: phones.randomElement() ?? "",
                 email: emails.randomElement() ?? ""
             )
-            
-            persons.append(newPerson)
-
+            if !persons.contains(where: { $0.name == newPerson.name || $0.surname == newPerson.surname || $0.phone == newPerson.phone && $0.email == newPerson.email }) {
+                persons.append(newPerson)
+            }
         }
         return persons
     }
