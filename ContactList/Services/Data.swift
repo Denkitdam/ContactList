@@ -5,6 +5,9 @@
 //  Created by Denis Kitaev on 18.04.2023.
 //
 class DataStore {
+    
+    static let shared = DataStore
+    
     let names = [
         "Mike",
         "Ann",
@@ -36,4 +39,6 @@ class DataStore {
         "thg@outlook.com",
         "str@gmail.com"
     ]
+    
+    private init() {}
 }
