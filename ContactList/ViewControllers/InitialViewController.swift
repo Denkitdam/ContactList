@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InitialViewController: UITabBarController {
+final class InitialViewController: UITabBarController {
 
     let persons = Person.getPersons()
 
