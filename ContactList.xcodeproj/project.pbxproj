@@ -17,6 +17,7 @@
 		C893DEA629EEC2280031CC08 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893DEA529EEC2280031CC08 /* Data.swift */; };
 		C893DEA829EECC420031CC08 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893DEA729EECC420031CC08 /* ContactListViewController.swift */; };
 		C893DEAC29F1879E0031CC08 /* SectionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893DEAB29F1879E0031CC08 /* SectionsListViewController.swift */; };
+		C893DEB029F1B7B70031CC08 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C893DEAF29F1B7B70031CC08 /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C893DEA529EEC2280031CC08 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C893DEA729EECC420031CC08 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		C893DEAB29F1879E0031CC08 /* SectionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsListViewController.swift; sourceTree = "<group>"; };
+		C893DEAF29F1B7B70031CC08 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		C893DEA029EEC1C40031CC08 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C893DEAF29F1B7B70031CC08 /* InitialViewController.swift */,
 				C893DEA729EECC420031CC08 /* ContactListViewController.swift */,
 				C893DE8E29EEC1850031CC08 /* ContactDetailsViewController.swift */,
 				C893DEAB29F1879E0031CC08 /* SectionsListViewController.swift */,
@@ -197,6 +200,7 @@
 				C893DEAC29F1879E0031CC08 /* SectionsListViewController.swift in Sources */,
 				C893DEA329EEC2070031CC08 /* Person.swift in Sources */,
 				C893DE8D29EEC1850031CC08 /* SceneDelegate.swift in Sources */,
+				C893DEB029F1B7B70031CC08 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

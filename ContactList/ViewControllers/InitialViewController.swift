@@ -7,23 +7,20 @@
 
 import UIKit
 
-final class InitialViewController: UITabBarController {
+class InitialViewController: UITabBarController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViewControllers()
+    }
 
-    let persons = Person.getPersons()
-
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let viewControllers = tabBarController?.viewControllers else { return }
+    private func setupViewControllers() {
+        guard let contactsVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let sectionsVC = viewControllers?.last as? SectionsListViewController else { return }
+        let persons = Person.getPersons()
+        contactsVC.persons = persons
+        sectionsVC.persons = persons
         
-        viewControllers.forEach { viewController in
-            if let firstNavigationVC = segue.destination as? UINavigationController {
-                guard let contactListVC = firstNavigationVC.topViewController as? ContactListViewController else { return }
-                contactListVC.persons = persons
-            } else if let secondNavigationVC = segue.destination as? UINavigationController {
-                guard let sectionsVC = secondNavigationVC.topViewController as? SectionsListViewController else { return }
-                sectionsVC.persons = persons
-            }
-        }
     }
     
 
