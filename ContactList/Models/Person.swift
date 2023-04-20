@@ -13,13 +13,14 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
+        let data = DataStore.init()
         
         while persons.count < 6 {
             let newPerson = Person(
-                name: names.randomElement() ?? "",
-                surname: surnames.randomElement() ?? "",
-                phone: phones.randomElement() ?? "",
-                email: emails.randomElement() ?? ""
+                name: data.names.randomElement() ?? "",
+                surname: data.surnames.randomElement() ?? "",
+                phone: data.phones.randomElement() ?? "",
+                email: data.emails.randomElement() ?? ""
             )
             if !persons.contains(where: { $0.name == newPerson.name || $0.surname == newPerson.surname || $0.phone == newPerson.phone && $0.email == newPerson.email }) {
                 persons.append(newPerson)
